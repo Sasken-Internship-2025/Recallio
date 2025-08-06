@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_back"
+        android:contentDescription="Back"
+        android:padding="8dp"
+        android:tint="#4B2E2E"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp" />
+
+    <!-- Header Layout -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/aboutTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#4B2E2E"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/appNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recallio"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#4B2E2E"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+    <!-- About Us Content -->
+    <TextView android:id="@+id/aboutContentTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/headerLayout" android:layout_marginTop="24dp" android:text="NotesApp is your personal space to jot down ideas, save important notes, and stay organized. It allows you to create, edit, and manage notes with ease.\n\nKey features include:\n• Rich text formatting (bold, italic, font colors)\n• Image and voice note support\n• Firebase cloud sync for backup and accessibility\n• Secure login/logout system\n• Personalized settings and About section\n\nOur mission is to provide a simple yet powerful note-taking experience for everyone. Whether you're a student, professional, or creative thinker, NotesApp adapts to your needs and helps boost your productivity." android:textColor="#4B2E2E" android:textSize="16sp"/>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "777072214523",
+    "firebase_url": "https://sasken-project-final-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "sasken-project-final",
+    "storage_bucket": "sasken-project-final.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777072214523:android:21ec34a63cac832f314b5e",
+        "android_client_info": {
+          "package_name": "com.example.saskenproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdbUhoZfWhraN7QRTSBTZbV9R-VLinGXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

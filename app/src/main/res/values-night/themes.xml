@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.NotesAppJava" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#4E342E</item>
+        <item name="colorPrimaryVariant">#3E2723</item>
+        <item name="colorSecondary">#8D6E63</item>
+        <item name="colorSecondaryVariant">#5D4037</item>
+        <item name="android:colorBackground">#3E2723</item>
+        <item name="colorSurface">#4E342E</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorOnBackground">#FFFFFF</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+    </style>
+</resources>

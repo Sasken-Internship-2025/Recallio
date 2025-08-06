@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Recallio</string>
+    <string-array name="font_options">
+        <item>Default</item>
+        <item>Monospace</item>
+        <item>Sans Serif</item>
+        <item>Serif</item>
+    </string-array>
+
+
+</resources>

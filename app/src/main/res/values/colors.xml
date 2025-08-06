@@ -1,0 +1,24 @@
+<resources>
+    <color name="colorPrimary">#8B4513</color> <!-- Saddle Brown -->
+    <color name="colorPrimaryVariant">#6B4226</color>
+    <color name="colorSecondary">#D9CFC3</color>
+    <color name="colorSecondaryVariant">#BFA88A</color>
+    <color name="colorBackground">#FAF3DC</color> <!-- Beige -->
+    <color name="colorSurface">#D9CFC3</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#5D3A00</color>
+    <color name="colorOnBackground">#5D3A00</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cream">#FFF8E7</color>
+    <color name="brown">#5D4037</color>
+    <color name="dark_brown">#3E2723</color>
+    <color name="light_blue">#BBDEFB</color>
+    <color name="gray">#808080</color>
+    <color name="darkgray">#A9A9A9</color>
+    <color name="colorOnSurface">#5D3A00</color>
+    <color name="brown_700">#5D4037</color>
+    <color name="teal_700">#018786</color>
+    <color name="noteBackground">#FFFDF8</color>
+</resources>

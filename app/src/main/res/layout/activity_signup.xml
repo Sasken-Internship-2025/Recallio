@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/signupLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First time? Join us!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#4B2E2E"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginBottom="20dp"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColor="#5D4037"
+        android:textColorHint="#A1887F"
+        android:backgroundTint="#5D4037" />
+
+    <Button
+        android:id="@+id/sendOtpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send OTP"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#5D4037"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:textColor="#5D4037"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:focusable="true" />
+
+</LinearLayout>
