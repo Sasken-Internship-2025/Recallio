@@ -1,8 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="24dp">
+    android:layout_height="match_parent">
 
     <!-- Back Button -->
     <ImageButton
@@ -15,41 +15,99 @@
         android:src="@drawable/ic_back"
         android:contentDescription="Back"
         android:padding="8dp"
-        android:tint="#4B2E2E"
         android:layout_marginTop="8dp"
         android:layout_marginStart="8dp" />
 
-    <!-- Header Layout -->
-    <LinearLayout
-        android:id="@+id/headerLayout"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_below="@id/backButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:layout_centerHorizontal="true">
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:clipToPadding="false">
 
-        <TextView
-            android:id="@+id/aboutTitleTextView"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="About Us"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#4B2E2E"
-            android:layout_marginBottom="8dp" />
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
 
-        <TextView
-            android:id="@+id/appNameTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Recallio"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="#4B2E2E"
-            android:layout_marginBottom="16dp" />
-    </LinearLayout>
+            <!-- App Name -->
+            <TextView
+                android:id="@+id/appNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recallio"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#4B2E2E"
+                android:layout_marginBottom="8dp" />
 
-    <!-- About Us Content -->
-    <TextView android:id="@+id/aboutContentTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/headerLayout" android:layout_marginTop="24dp" android:text="NotesApp is your personal space to jot down ideas, save important notes, and stay organized. It allows you to create, edit, and manage notes with ease.\n\nKey features include:\n• Rich text formatting (bold, italic, font colors)\n• Image and voice note support\n• Firebase cloud sync for backup and accessibility\n• Secure login/logout system\n• Personalized settings and About section\n\nOur mission is to provide a simple yet powerful note-taking experience for everyone. Whether you're a student, professional, or creative thinker, NotesApp adapts to your needs and helps boost your productivity." android:textColor="#4B2E2E" android:textSize="16sp"/>
+            <!-- Tagline -->
+            <TextView
+                android:id="@+id/appTaglineTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your smart, cloud-synced note companion"
+                android:textSize="16sp"
+                android:textColor="#777777"
+                android:layout_marginBottom="24dp" />
+
+            <!-- About Description -->
+            <TextView
+                android:id="@+id/aboutContentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recallio helps you capture your thoughts and stay organized anytime, anywhere. With cloud sync, your notes are always safe and accessible across devices."
+                android:textColor="#4B2E2E"
+                android:textSize="16sp"
+                android:lineSpacingExtra="9dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Features Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="8dp"
+                card_view:cardBackgroundColor="#FAFAFA"
+                android:padding="26dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Key Features"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#4B2E2E"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• OTP-secured Firebase authentication\n• Sync across devices with Realtime Database\n• Add images, checklists, reminders, and labels\n• Change password and manage account securely\n• Multi-device cloud backup for seamless access"
+                        android:textColor="#4B2E2E"
+                        android:textSize="15sp"
+                        android:lineSpacingExtra="6dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Developer Info -->
+            <TextView
+                android:id="@+id/developerInfoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developed by : Team P3\nVersion : 1.0.0"
+                android:textColor="#888888"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
