@@ -52,7 +52,9 @@ Recallio is a feature-rich cloud-based note-taking app for Android. It enables u
 
 4. **Security**
    - Firebase Database Rules ensure that each user can only access their own notes.  
-
+<img width="1920" height="1080" alt="00" src="https://github.com/user-attachments/assets/1d5aef9f-a718-40e3-a581-df701ec8061e" />
+<img width="1920" height="1080" alt="01" src="https://github.com/user-attachments/assets/8ae0393d-63b4-4ac8-9264-fe777919ca68" />
+<img width="1920" height="1080" alt="02" src="https://github.com/user-attachments/assets/dec5759b-758b-42b3-bd5d-e02501ec597b" />
 ---
 
 ## Firebase Database Rules Example
